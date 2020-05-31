@@ -1,0 +1,8 @@
+# data系のfileは格納しない
+*.csv
+*.tsv
+*.data
+*.txt
+*.parquet
+*.db
+*.pkl
