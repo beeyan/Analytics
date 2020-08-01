@@ -6,3 +6,6 @@
 *.parquet
 *.db
 *.pkl
+
+/mlflow/
+/Data/
