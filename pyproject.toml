@@ -15,6 +15,11 @@ numpyro = "^0.3.0"
 scikit-learn = "^0.23.2"
 matplotlib = "^3.3.1"
 seaborn = "^0.10.1"
+xgboost = "^1.1.1"
+lightgbm = "^2.3.1"
+jax = "0.1.73"
+shap = "^0.35.0"
+interpret = "^0.2.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.0.1"
