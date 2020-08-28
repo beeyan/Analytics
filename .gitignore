@@ -7,5 +7,4 @@
 *.db
 *.pkl
 
-/mlflow/
-/Data/
+.venv
