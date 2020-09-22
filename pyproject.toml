@@ -6,7 +6,7 @@ authors = ["beeyan"]
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "3.8"
 numpy = "^1.19.1"
 pandas = "^1.1.1"
 causalml = "^0.8.0"
@@ -20,6 +20,11 @@ lightgbm = "^2.3.1"
 jax = "0.1.73"
 shap = "^0.35.0"
 interpret = "^0.2.1"
+fbprophet = "^0.7.1"
+pulp = "^2.3"
+networkx = "^2.5"
+statsmodels = "^0.12.0"
+optuna = "^2.1.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.0.1"
