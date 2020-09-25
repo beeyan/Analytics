@@ -26,6 +26,8 @@ networkx = "^2.5"
 statsmodels = "^0.12.0"
 optuna = "^2.1.0"
 torchvision = "^0.7.0"
+kedro = "^0.16.5"
+mlflow = "^1.11.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.0.1"
