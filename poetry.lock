@@ -64,6 +64,22 @@ python-versions = "*"
 version = "0.1.0"
 
 [[package]]
+category = "main"
+description = "ARCH for Python"
+name = "arch"
+optional = false
+python-versions = ">=3.6"
+version = "4.15"
+
+[package.dependencies]
+cython = ">=0.29.14"
+numpy = ">=1.14"
+pandas = ">=0.23"
+property_cached = ">=1.6.3"
+scipy = ">=1.0.1"
+statsmodels = ">=0.9"
+
+[[package]]
 category = "dev"
 description = "The secure Argon2 password hashing algorithm."
 name = "argon2-cffi"
@@ -878,7 +894,7 @@ version = "0.2.1"
 
 [package.dependencies]
 [package.dependencies.interpret-core]
-extras = ["linear", "debug", "notebook", "decisiontree", "required", "plotly", "treeinterpreter", "ebm", "shap", "sensitivity", "lime", "dash"]
+extras = ["plotly", "lime", "shap", "dash", "linear", "sensitivity", "notebook", "decisiontree", "debug", "required", "treeinterpreter", "ebm"]
 version = ">=0.2.1"
 
 [[package]]
@@ -1945,6 +1961,14 @@ wcwidth = "*"
 
 [[package]]
 category = "main"
+description = "A decorator for caching properties in classes (forked from cached-property)."
+name = "property-cached"
+optional = false
+python-versions = ">= 3.5"
+version = "1.6.4"
+
+[[package]]
+category = "main"
 description = "Protocol Buffers"
 name = "protobuf"
 optional = false
@@ -2861,7 +2885,7 @@ test = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 
 [metadata]
-content-hash = "5cad34a1a0314361a5b3f4d4e6fd1c24d381b8c1180de71a55fb845d58cc18f3"
+content-hash = "727d9f9fd1785df63a27cd21a9bcd68efb815d93c03c1f10147cdbd6fe6919e7"
 lock-version = "1.0"
 python-versions = "3.8"
 
@@ -2884,6 +2908,24 @@ anyconfig = [
 appnope = [
     {file = "appnope-0.1.0-py2.py3-none-any.whl", hash = "sha256:5b26757dc6f79a3b7dc9fab95359328d5747fcb2409d331ea66d0272b90ab2a0"},
     {file = "appnope-0.1.0.tar.gz", hash = "sha256:8b995ffe925347a2138d7ac0fe77155e4311a0ea6d6da4f5128fe4b3cbe5ed71"},
+]
+arch = [
+    {file = "arch-4.15-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:8f4866d7a5e1ae2e0f3c1ee4f1bbd3b0dd6d6885c0f7dd57cb8a851573c1e66e"},
+    {file = "arch-4.15-cp36-cp36m-manylinux1_i686.whl", hash = "sha256:9fa340a5d440bfabc6af123c57cd542ed3ad5c5c3e758094ca0c4adfad70dd02"},
+    {file = "arch-4.15-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:69524d45f03cc055f70f45e7e4abd16a16bc86a12cff3f5749a393ca4ae79da0"},
+    {file = "arch-4.15-cp36-cp36m-win32.whl", hash = "sha256:22cf8762d2fd6597c6cfc0f8df0e6d57358cc98ebc1ac011de8ca6d5e3196c0e"},
+    {file = "arch-4.15-cp36-cp36m-win_amd64.whl", hash = "sha256:eaec799c616bcbfb83e86f7cc422ffdfadbd1afbc4c028a6d427624395bb768c"},
+    {file = "arch-4.15-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:4f1911299e1db5b252d9936a8ff62b167fa7f6ccfc8644a222ef499b03875f90"},
+    {file = "arch-4.15-cp37-cp37m-manylinux1_i686.whl", hash = "sha256:4215ce8b31e2a51356d3a132420bc8bfe2e29ac520bc1548819e4f272052dd25"},
+    {file = "arch-4.15-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:3268998f8c50ac84fccbec2d67a106ef9ef05fe68c2cc8ad8e4aa84a0786df5b"},
+    {file = "arch-4.15-cp37-cp37m-win32.whl", hash = "sha256:b7027af271c7cd41a91423a3f2d4cfb8029ebb2f3565e830c6930cfee70f2774"},
+    {file = "arch-4.15-cp37-cp37m-win_amd64.whl", hash = "sha256:9215d5d511aa2fdb4ef5a7667e2fc2cd407c955833b3bc0b6507c7d55d2474cf"},
+    {file = "arch-4.15-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:7ea0fb68085f724995127129df58fc4fd9df7346e88b37662ea70baff0af9c52"},
+    {file = "arch-4.15-cp38-cp38-manylinux1_i686.whl", hash = "sha256:30fb325505fb7de75a85ba238b5717dc8aeeca9660ae554b82f17dcfb9c007d7"},
+    {file = "arch-4.15-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:808835c25f23ef3794316b7979f17764ed5c511c3034e0fe30f3ffffcb0cae10"},
+    {file = "arch-4.15-cp38-cp38-win32.whl", hash = "sha256:e5958a05be1a52687c42b0054ca8e93ebcc8a540fefab38abd54b8aab170bd45"},
+    {file = "arch-4.15-cp38-cp38-win_amd64.whl", hash = "sha256:ded794b9856aaa16a834ac5aa819d8f514c3909a49f695e2ffdaa6f76fe94b40"},
+    {file = "arch-4.15.tar.gz", hash = "sha256:8a3f80fe300f8f0cbf7bcdb337dbd3666d7371984bf91bb47fa8ffda6b0e1449"},
 ]
 argon2-cffi = [
     {file = "argon2-cffi-20.1.0.tar.gz", hash = "sha256:d8029b2d3e4b4cea770e9e5a0104dd8fa185c1724a0f01528ae4826a6d25f97d"},
@@ -3782,6 +3824,10 @@ prometheus-flask-exporter = [
 prompt-toolkit = [
     {file = "prompt_toolkit-3.0.7-py3-none-any.whl", hash = "sha256:83074ee28ad4ba6af190593d4d4c607ff525272a504eb159199b6dd9f950c950"},
     {file = "prompt_toolkit-3.0.7.tar.gz", hash = "sha256:822f4605f28f7d2ba6b0b09a31e25e140871e96364d1d377667b547bb3bf4489"},
+]
+property-cached = [
+    {file = "property-cached-1.6.4.zip", hash = "sha256:3e9c4ef1ed3653909147510481d7df62a3cfb483461a6986a6f1dcd09b2ebb73"},
+    {file = "property_cached-1.6.4-py2.py3-none-any.whl", hash = "sha256:135fc059ec969c1646424a0db15e7fbe1b5f8c36c0006d0b3c91ba568c11e7d8"},
 ]
 protobuf = [
     {file = "protobuf-3.13.0-cp27-cp27m-macosx_10_9_x86_64.whl", hash = "sha256:9c2e63c1743cba12737169c447374fab3dfeb18111a460a8c1a000e35836b18c"},
