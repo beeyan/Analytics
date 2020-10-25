@@ -9,6 +9,11 @@
 
 .venv
 
+poetry.lock
+.python-version
+.vscode
+.DS_Store
+
 Data/
 
 mlflow/
