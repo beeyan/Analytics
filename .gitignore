@@ -14,7 +14,7 @@ poetry.lock
 .vscode
 .DS_Store
 
-Data/
+data/
 
 mlflow/
 

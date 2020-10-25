@@ -1,0 +1,6 @@
+context_path: pipeline.run.ProjectContext
+project_name: "pipeline"
+project_version: "0.16.5"
+package_name: "pipeline"
+hooks:
+  - pipeline.hooks.project_hooks
