@@ -13,6 +13,7 @@ poetry.lock
 .python-version
 .vscode
 .DS_Store
+.ipynb_checkpoints
 
 data/
 
